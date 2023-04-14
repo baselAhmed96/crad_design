@@ -1,0 +1,20 @@
+/* ======================== General Css ========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+input:focus
+{
+    box-shadow: none!important;
+}

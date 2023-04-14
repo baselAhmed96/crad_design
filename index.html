@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1">
+    <title>CRUD</title>
+    <link rel="shortcut icon" href="assets/images/js.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style_index.css">
+</head>
+<body>
+
+    <section class="text-center mb-5">
+        <div class="container">
+            <h1 class="text-info my-5">Add Products</h1>
+            <input type="text" required placeholder="Product Name" id="ProductNameInput" class="form-control mb-4">
+            <input type="number" required placeholder="Product Price" id="ProductPriceInput" class="form-control mb-4">
+            <input type="text" required placeholder="Product category" id="ProductCategoryInput" class="form-control mb-4">
+            <input type="text" required placeholder="Product Description" id="ProductDescriptionInput" class="form-control mb-4">
+            <button onclick="addProduct()" id="btnProduct" class="btn btn-outline-info">Add Product</button>
+        </div>
+    </section>
+    <input oninput="searchProduct(this.value)" type="search" class="form-control w-50 mx-auto mb-4" placeholder="Search by Name...">
+    <section>
+        <div class="container text-center">
+            <table class="table">
+                <thead>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>category</th>
+                    <th>Description</th>
+                    <th class="text-warning">Update</th>
+                    <th class="text-danger">Delete</th>
+                </thead>
+                <tbody id="productTable">
+
+                </tbody>
+            </table>
+        </div>
+    </section> 
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    
+</body>
+</html>
